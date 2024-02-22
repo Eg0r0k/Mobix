@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobix/app/app_theme.dart';
 import '../../shared/types/types.dart';
 import '../../features/phones/phone_item/phone_item.dart';
 
@@ -9,14 +10,25 @@ class PhoneList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
         separatorBuilder: (BuildContext context, int index) {
-          return SizedBox(height: 50);
+          return const Divider(
+            height: 33,
+            color: AppTheme.dividerColor,
+          );
         },
         itemCount: phones.length,
         itemBuilder: (BuildContext context, int index) {
-          return PhoneItem(
-            phoneName: phones[index].phoneName,
-            phoneSrc: phones[index].imgSrc,
-          );
+          if (phones.isEmpty) {
+            return const Center(
+              child: Text("Телефонов нету"),
+            );
+          } else {
+            return PhoneItem(
+              phoneName: phones[index].phoneName,
+              phoneSrc: phones[index].imgSrc,
+              phoneDesc: phones[index].desc,
+              phonePrice: phones[index].price,
+            );
+          }
         });
   }
 }

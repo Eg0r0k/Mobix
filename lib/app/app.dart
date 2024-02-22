@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './app_theme.dart';
+import 'package:mobix/app/app_theme.dart';
 import '../pages/home.dart';
 import '../pages/phone.dart';
 import '../widgets/bottom_navigation_bar.dart';
@@ -27,7 +27,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(colorScheme: AppTheme.mainColorScheme),
       home: Scaffold(
         body: _screens[_selectedIndex],
         bottomNavigationBar: CustomBottomNavigationBar(
