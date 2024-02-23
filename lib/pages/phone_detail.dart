@@ -30,7 +30,7 @@ class PhoneDetailScreen extends StatelessWidget {
             Spacer(),
             Text(
               "Phones",
-              style: TextStyles.displayLarge,
+              style: TextStyles.headlineMedium,
             ),
             Spacer(),
             Text("Test",

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobix/app/app_theme.dart';
-import '../pages/login.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,26 +11,22 @@ class HomePage extends StatelessWidget {
           title: Row(
             children: <Widget>[
               InkWell(
+                onTap: () => Navigator.pop(context),
                 child: Text(
-                  "Test",
+                  "Back",
                   style: TextStyles.headlineSmall
                       .copyWith(color: AppTheme.mainColor),
                 ),
               ),
               Spacer(),
               Text(
-                "Sing Up",
+                "Log In",
                 style: TextStyles.displayLarge,
               ),
               Spacer(),
               InkWell(
-                onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginPage(),
-                    )),
                 child: Text(
-                  "Login",
+                  "Test",
                   style: TextStyles.headlineSmall
                       .copyWith(color: AppTheme.mainColor),
                 ),
@@ -50,22 +44,6 @@ class HomePage extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: "Name",
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.blue),
-                          borderRadius: BorderRadius.circular(8)),
-                      enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: AppTheme.gray),
-                          borderRadius: BorderRadius.circular(8)),
-                      fillColor: AppTheme.sceletonBackground,
-                      filled: true,
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 12),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Email",
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue),
                           borderRadius: BorderRadius.circular(8)),
@@ -96,8 +74,6 @@ class HomePage extends StatelessWidget {
                   ),
                 )
               ],
-            )
-        )
-      );
+            )));
   }
 }

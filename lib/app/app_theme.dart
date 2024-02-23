@@ -13,6 +13,7 @@ class AppTheme {
   static const Color backgroundColor = Color(0xFFFFFFFF);
   static const EdgeInsets containerPadding =
       EdgeInsets.symmetric(vertical: 10, horizontal: 16);
+  static const Color gray = Color(0xFFE8E8E8);
 }
 
 class CustomCardTheme {
