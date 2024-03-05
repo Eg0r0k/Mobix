@@ -3,6 +3,7 @@ import 'package:mobix/app/app_theme.dart';
 import '../pages/home.dart';
 import '../pages/phone.dart';
 import '../widgets/bottom_navigation_bar.dart';
+import '../pages/market.dart';
 
 class App extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _AppState extends State<App> {
   final List<Widget> _screens = <Widget>[
     HomePage(),
     PhonePage(),
-    PhonePage(),
+    MarketPage(),
   ];
 
   void _onItemClick(int index) {

@@ -57,7 +57,7 @@ class PhoneItem extends StatelessWidget {
                           child: Row(
                             children: <Widget>[
                               Text(
-                                "$phoneName",
+                                phoneName,
                                 style: TextStyles.headlineSmall,
                               ),
                               Spacer(),

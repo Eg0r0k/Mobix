@@ -30,6 +30,13 @@ class CustomCardTheme {
   );
 }
 
+class CustomFieldTheme {
+  static const focusedBorderSide = BorderSide(color: AppTheme.mainColor);
+  static const enabledBorderSide = BorderSide(color: AppTheme.gray);
+  static final borderRadius = BorderRadius.circular(8);
+  static const fillColor = AppTheme.sceletonBackground;
+}
+
 class TextStyles {
   static const TextStyle displayLarge = TextStyle(
       fontSize: 32, color: AppTheme.blackText, fontWeight: FontWeight.w600);

@@ -89,3 +89,164 @@ final List<Phones> phones = [
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBr7KpcRiwDeO_8KMQeYiFhlR1ut9QCCwsHQ&usqp=CAU",
       phoneName: "Telephone"),
 ];
+
+class MarketItemType {
+  String imgSrc;
+  String desc;
+  double price;
+  double discaunt;
+  List<String> imgSrcSet;
+  MarketItemType(
+      {required this.imgSrc,
+      required this.desc,
+      required this.price,
+      required this.discaunt,
+      required this.imgSrcSet});
+}
+
+final List<MarketItemType> marketItems = [
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-q/wc1000/6870604670.jpg",
+      desc:
+          "Грипсы для мышки универсальные Logitech G102 LIGHTSYNC, G304 LIGHTSPEED, Противоскользящие накладки для мыши, черный",
+      price: 640.0,
+      discaunt: 5.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-q/wc1000/6870604670.jpg",
+        "https://ir.ozone.ru/s3/multimedia-s/wc1000/6870604672.jpg",
+        "https://ir.ozone.ru/s3/multimedia-t/wc1000/6870604673.jpg",
+        "https://ir.ozone.ru/s3/multimedia-p/wc1000/6870604669.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-4/wc1000/6856969816.jpg",
+      desc: "Infinix Смартфон HOT 40i 4/128 ГБ, черный",
+      price: 9595.0,
+      discaunt: 70.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-4/wc1000/6856969816.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1/wc1000/6856969993.jpg",
+        "https://ir.ozone.ru/s3/multimedia-4/wc1000/6856969996.jpg",
+        "https://ir.ozone.ru/s3/multimedia-7/wc1000/6856969999.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-j/wc1000/6833625967.jpg",
+      desc:
+          "Смарт часы мужские, умные часы наручные, Smart Watch X9 Ultra, электроные",
+      price: 2154.0,
+      discaunt: 14.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-j/wc1000/6833625967.jpg",
+        "https://ir.ozone.ru/s3/multimedia-6/wc1000/6833625990.jpg",
+        "https://ir.ozone.ru/s3/multimedia-l/wc1000/6833625933.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-9/wc1000/6731349921.jpg",
+      desc: "Умная колонка с голосовым помощником Салют SberBoom Mini",
+      price: 2505.0,
+      discaunt: 12.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-9/wc1000/6731349921.jpg",
+        "https://ir.ozone.ru/s3/multimedia-b/wc1000/6537347783.jpg",
+        "https://ir.ozone.ru/s3/multimedia-c/wc1000/6537347784.jpg",
+        "https://ir.ozone.ru/s3/multimedia-k/wc1000/6537347792.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-1-5/wc1000/6912551381.jpg",
+      desc:
+          "Наушники беспроводные большие накладные с микрофоном Hoco W35 Max New",
+      price: 1204.0,
+      discaunt: 50.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-1-1/wc1000/6922199053.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-4/wc1000/6912551380.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-0/wc1000/6922199052.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-1/wc1000/6912551377.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-r/wc1000/6903570123.jpg",
+      desc: "Амбушюры для AirPods Pro / AirPods Pro 2 насадки 3 шт. XS/S/L",
+      price: 600.0,
+      discaunt: 10.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-6/wc1000/6101346486.jpg",
+        "https://ir.ozone.ru/s3/multimedia-r/wc1000/6903570123.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-1-3/wc1000/6912509403.jpg",
+      desc: "Товар 7",
+      price: 700.0,
+      discaunt: 3.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-1-3/wc1000/6912509403.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-z/wc1000/6912509399.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-v/wc1000/6912509395.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-w/wc1000/6731346380.jpg",
+      desc: "Умная колонка с голосовым помощником Салют SberBoom",
+      price: 5000.0,
+      discaunt: 10.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-n/wc1000/6680611463.jpg",
+        "https://ir.ozone.ru/s3/multimedia-t/wc1000/6680611469.jpg",
+        "https://ir.ozone.ru/s3/multimedia-i/wc1000/6680611422.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-3/wc1000/6561892935.jpg",
+      desc: "HStorie Умные часы Smart Watch X8 PRO, 45mm, Черный",
+      price: 2020.0,
+      discaunt: 23.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-3/wc1000/6561892935.jpg",
+        "https://ir.ozone.ru/s3/multimedia-7/wc1000/6561892939.jpg",
+        "https://ir.ozone.ru/s3/multimedia-0/wc1000/6561892932.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-l/wc1000/6904608213.jpg",
+      desc: "Умные смарт часы женские розовые",
+      price: 1000.0,
+      discaunt: 100.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-l/wc1000/6904608213.jpg",
+        "https://ir.ozone.ru/s3/multimedia-3/wc1000/6904608195.jpg",
+        "https://ir.ozone.ru/s3/multimedia-r/wc1000/6904608147.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir-2.ozone.ru/s3/multimedia-5/wc300/6725257097.jpg",
+      desc: "Наушники беспроводные / Bluetooth / 1-го поколения / Белый",
+      price: 1300.0,
+      discaunt: 12.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-r/wc1000/6904608147.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-c/wc1000/6922452936.jpg",
+        "https://ir.ozone.ru/s3/multimedia-1-e/wc1000/6922452938.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir.ozone.ru/s3/multimedia-n/wc1000/6751446503.jpg",
+      desc: "Кастомный спиральный провод для клавиатуры с переходником Авиатор",
+      price: 1200.0,
+      discaunt: 51.0,
+      imgSrcSet: [
+        "https://ir.ozone.ru/s3/multimedia-n/wc1000/6751446503.jpg",
+        "https://ir.ozone.ru/s3/multimedia-4/wc1000/6751446484.jpg",
+        "https://ir.ozone.ru/s3/multimedia-6/wc1000/6751446486.jpg"
+      ]),
+  MarketItemType(
+      imgSrc: "https://ir-2.ozone.ru/s3/multimedia-q/wc300/6833258306.jpg",
+      desc: "Товар 13",
+      price: 1300.0,
+      discaunt: 23.0,
+      imgSrcSet: []),
+  MarketItemType(
+      imgSrc: "https://ir-2.ozone.ru/s3/multimedia-u/wc300/6785283414.jpg",
+      desc: "Товар 14",
+      price: 1400.0,
+      discaunt: 34.0,
+      imgSrcSet: []),
+  MarketItemType(
+      imgSrc: "https://ir-2.ozone.ru/s3/multimedia-v/wc300/6686932027.jpg",
+      desc: "Товар 15",
+      price: 1500.0,
+      discaunt: 59.0,
+      imgSrcSet: []),
+];

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobix/app/app_theme.dart';
+import '../shared/field/field.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -36,42 +37,14 @@ class LoginPage extends StatelessWidget {
           centerTitle: true,
         ),
         body: Container(
+            color: AppTheme.backgroundColor,
             padding: AppTheme.containerPadding,
-            child: Column(
+            child: const Column(
               children: [
-                Container(
-                  margin: EdgeInsets.only(bottom: 12, top: 36),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Name",
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.blue),
-                          borderRadius: BorderRadius.circular(8)),
-                      enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: AppTheme.gray),
-                          borderRadius: BorderRadius.circular(8)),
-                      fillColor: AppTheme.sceletonBackground,
-                      filled: true,
-                    ),
-                  ),
-                ),
-                Container(
-                  child: TextField(
-                    obscureText: true,
-                    enableSuggestions: false,
-                    autocorrect: false,
-                    decoration: InputDecoration(
-                      hintText: "Password",
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.blue),
-                          borderRadius: BorderRadius.circular(8)),
-                      enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: AppTheme.gray),
-                          borderRadius: BorderRadius.circular(8)),
-                      fillColor: AppTheme.sceletonBackground,
-                      filled: true,
-                    ),
-                  ),
+                CustomField(textHold: "Email"),
+                CustomField(
+                  textHold: "Password",
+                  obscureText: true,
                 )
               ],
             )));
