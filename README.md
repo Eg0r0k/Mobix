@@ -1,7 +1,7 @@
 # mobix
 
 Приложение с листами телефонов и маркетом
-
+ГИФКА ЗАГРУЖАЕТСЯ НЕ СРАЗУ.
 ## Результат
 ![alt text](<Desktop 2024.03.05 - 21 (online-video-cutter.com).gif>)
 ![alt text](image.png)
