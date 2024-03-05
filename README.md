@@ -1,6 +1,14 @@
 # mobix
 
-Приложение с листами телефонов.
+Приложение с листами телефонов и маркетом
+
+## Результат
+![alt text](<Desktop 2024.03.05 - 21 (online-video-cutter.com).gif>)
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-3.png)
+![alt text](image-5.png)
+![alt text](image-4.png)
 
 ## Виджет PhoneItem
 
@@ -173,9 +181,3 @@ class PhoneDetailScreen extends StatelessWidget {
 Состоит из двух `TextField` имеет кнопку возвращения к регистрации.
 
 
-# Результат
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-3.png)
-![alt text](image-5.png)
-![alt text](image-4.png)
